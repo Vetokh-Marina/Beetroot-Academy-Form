@@ -5,51 +5,54 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>User registration</title>
+        <link rel="stylesheet" href="./css/style.css">
     </head>
     <body>
         <main class="main">
             <div class="container">
                 <form method="get" class="form__registration">
-                    <div>
+                    <div class="item">
                         <label for="name">
-                            Повне ім'я
+                            <p>Повне ім'я</p>
                             <input type="text" id="name">
                         </label>
                     </div>
-                    <div>
+                    <div class="item">
                         <label for="email">
-                            Email
+                            <p>Email</p>
                             <input type="email" id="email">
                         </label>
                     </div>
-                    <div>
+                    <div class="item">
                         <label for="password">
-                            Пароль
+                            <p>Пароль</p>
                             <input type="password" id="password">
                         </label>
                     </div>
-                    <div>
+                    <div class="item">
                         <label for="password_2">
-                            Пароль ще раз
+                            <p>Пароль ще раз</p>
                             <input type="password" id="password_2">
                         </label>
                     </div>
-                    <div>
-                        <p>Стать</p>
-                        <label>
+                    <div class="item">
+                        <label class="item__radio">
+                            <p>Стать</p>
                             <input type="radio" name="sex" value="man">
                             чоловіча
                         </label>
-                        <label>
+                        <label class="item__radio">
                             <input type="radio" name="sex" value="women">
                             жіноча
                         </label>
                     </div>
-                    <div>
-                        <label for="age">Вік</label>
-                        <input type="age" id="age">
+                    <div class="item">
+                        <label for="age">
+                            <p>Вік</p>
+                            <input type="age" id="age">
+                        </label>
                     </div>
-                    <div>
+                    <div class="item">
                         <p>Курс</p>
                         <select name="course">
                             <option selected>-=Виберіть курс=-</option>
@@ -59,14 +62,14 @@
                             <option value="node">Node JS</option>
                         </select>
                     </div>
-                    <div>
+                    <div class="item">
                         <p>Повна адреса</p>
-                        <textarea cols="25" rows="5" placeholder="Країна,регіон,місто/селище,вулиця"></textarea>
+                        <textarea cols="20" rows="5" placeholder="Країна,регіон,місто/селище,вулиця"></textarea>
                     </div>
-                    <div>
+                    <div class="item">
                         <label for="confirm">
                             <input type="checkbox" id="confirm">
-                            Я погоджуюсь з обробкою персональних даних
+                            <p>Я погоджуюсь з обробкою персональних даних</p>
                         </label>
                     </div>
                     <div class="block-btn">
