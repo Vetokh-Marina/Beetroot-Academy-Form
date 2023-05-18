@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ukr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>User registration</title>
+    </head>
+    <body>
+        <main class="main">
+            <div class="container">
+                <form method="get" class="form__registration">
+                    <div>
+                        <label for="name">
+                            Повне ім'я
+                            <input type="text" id="name">
+                        </label>
+                    </div>
+                    <div>
+                        <label for="email">
+                            Email
+                            <input type="email" id="email">
+                        </label>
+                    </div>
+                    <div>
+                        <label for="password">
+                            Пароль
+                            <input type="password" id="password">
+                        </label>
+                    </div>
+                    <div>
+                        <label for="password_2">
+                            Пароль ще раз
+                            <input type="password" id="password_2">
+                        </label>
+                    </div>
+                    <div>
+                        <p>Стать</p>
+                        <label>
+                            <input type="radio" name="sex" value="man">
+                            чоловіча
+                        </label>
+                        <label>
+                            <input type="radio" name="sex" value="women">
+                            жіноча
+                        </label>
+                    </div>
+                    <div>
+                        <label for="age">Вік</label>
+                        <input type="age" id="age">
+                    </div>
+                    <div>
+                        <p>Курс</p>
+                        <select name="course">
+                            <option selected>-=Виберіть курс=-</option>
+                            <option value="html">Html/CSS</option>
+                            <option value="js">Javascript</option>
+                            <option value="react">React JS</option>
+                            <option value="node">Node JS</option>
+                        </select>
+                    </div>
+                    <div>
+                        <p>Повна адреса</p>
+                        <textarea cols="25" rows="5" placeholder="Країна,регіон,місто/селище,вулиця"></textarea>
+                    </div>
+                    <div>
+                        <label for="confirm">
+                            <input type="checkbox" id="confirm">
+                            Я погоджуюсь з обробкою персональних даних
+                        </label>
+                    </div>
+                    <div class="block-btn">
+                        <button type="reset" class="button">Очистити форму</button>
+                        <button type="submit" class="button">Зареєструватися</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </body>
+</html>
