@@ -5,7 +5,6 @@
     margin: 0;
     box-sizing: border-box;
 }
-
 html, body {
     min-height: 100vh;
     font-size: var(--main-font-size);
@@ -23,8 +22,7 @@ select{
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 50px 15px;
-    
+    padding: 50px 15px;  
 }
 .form__registration {
     max-width: 500px;
@@ -105,6 +103,17 @@ input[type="age"] {
     border-radius: 0.05em;
     background-color: #fff;
 }
+.checkbox__input:checked + .check__box {
+    background-color: #f76beb;
+     box-shadow: 0 0 0 0.1em #f76beb,
+    0 0 0 0.2em #a50598;
+    background-image: url(../assets/img/check.svg);
+}
+.radio__input:checked + .radio__box::before{
+     background-color: #a50598;
+    transform: translate(-50%, -50%) scale(1);
+}
+/*  Создаем псевдоэлемент для радиобатона  */
 .radio__box::before{
     content: '';
     display: inline-block;
@@ -117,17 +126,6 @@ input[type="age"] {
     top: 50%;
     transform: translate(-50%, -50%) scale(0);
 }
-.checkbox__input:checked + .check__box {
-    background-color: #f76beb;
-     box-shadow: 0 0 0 0.1em #f76beb,
-    0 0 0 0.2em #a50598;
-    background-image: url(../assets/img/check.svg);
-}
-.radio__input:checked + .radio__box::before{
-     background-color: #a50598;
-    transform: translate(-50%, -50%) scale(1);
-}
-
 .checkbox__input:hover +.check__box,
 .radio__input:hover + .radio__box,
 .radio__input:checked + .radio__box {
