@@ -54,7 +54,9 @@ input[type="age"] {
 }
 .item{
     margin-bottom: 20px;
-
+}
+.item__radiogit p{
+   margin-right: 25px;
 }
 .button:not(:last-child){
     margin-right: 20px;
@@ -68,5 +70,37 @@ input[type="age"] {
 }
 .item__radio:not(:last-child){
     margin-right: 50px;
-
+}
+/* Скрыть элемент */
+.visually-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+ span.radio__box{
+    border-radius: 50%;
+}
+.check__box, .radio__box{
+    position: absolute;
+    width: 0.6em;
+    height: 0.6em;
+    box-shadow: 0 0 0 0.1em #626d73;
+    margin-top: 0.2em;
+    margin-left: -1em;
+    border-radius: 0.05em;
+    background-color: #fff;
+}
+.checkbox__input:checked + .check__box,
+.radio__input:checked + .radio__box {
+    background-color: #f76beb;
+    background-image: url(../assets/img/check.svg);
+}
+.checkbox__input:hover + .check__box {
+    box-shadow: 0 0 0 0.1em #f76beb,
+    0 0 0 0.2em #a50598;
 }

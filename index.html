@@ -38,12 +38,24 @@
                     <div class="item">
                         <label class="item__radio">
                             <p>Стать</p>
-                            <input type="radio" name="sex" value="man">
-                            чоловіча
+                            <input
+                                type="radio"
+                                name="sex"
+                                value="man"
+                                class="radio__input visually-hidden"
+                            >
+                            <span class="radio__box"></span>
+                            <span>Чоловіча</span>
                         </label>
                         <label class="item__radio">
-                            <input type="radio" name="sex" value="women">
-                            жіноча
+                            <input
+                                type="radio"
+                                name="sex"
+                                value="women"
+                                class=" radio__input visually-hidden"
+                            >
+                            <span class="radio__box"></span>
+                            <span>Жіноча</span>
                         </label>
                     </div>
                     <div class="item">
@@ -66,10 +78,11 @@
                         <p>Повна адреса</p>
                         <textarea cols="20" rows="5" placeholder="Країна,регіон,місто/селище,вулиця"></textarea>
                     </div>
-                    <div class="item">
-                        <label for="confirm">
-                            <input type="checkbox" id="confirm">
-                            <p>Я погоджуюсь з обробкою персональних даних</p>
+                    <div class="item checkbox">
+                        <label class="check">
+                            <input type="checkbox" class="checkbox__input visually-hidden">
+                            <span class="check__box"></span>
+                            <span>Я погоджуюсь з обробкою персональних даних</span>
                         </label>
                     </div>
                     <div class="block-btn">
