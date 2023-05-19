@@ -17,7 +17,6 @@ p {
     display: inline-block;
     min-width: 180px;
 }
-
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -28,7 +27,7 @@ p {
     max-width: 500px;
     background: lightgrey;
     margin: 0 auto;
-    padding: 50px 35px;
+    padding: 30px 29px;
     border-radius: 5px;
     box-shadow: 1px 5px 13px 4px #426b6d;
 }
@@ -53,9 +52,15 @@ input[type="age"] {
     transition: all 0.25s linear;
 }
 .item{
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
-.item__radiogit p{
+.item textarea{
+    padding: 8px;
+}
+.item .check{
+    padding-left: 20px;
+}
+.item__radio p{
    margin-right: 25px;
 }
 .button:not(:last-child){
@@ -67,6 +72,7 @@ input[type="age"] {
 }
 .block-btn {
     text-align: center;
+    padding-bottom:10px;
 }
 .item__radio:not(:last-child){
     margin-right: 50px;
@@ -86,6 +92,7 @@ input[type="age"] {
     border-radius: 50%;
 }
 .check__box, .radio__box{
+    display: inline-block;
     position: absolute;
     width: 0.6em;
     height: 0.6em;
@@ -95,12 +102,35 @@ input[type="age"] {
     border-radius: 0.05em;
     background-color: #fff;
 }
-.checkbox__input:checked + .check__box,
-.radio__input:checked + .radio__box {
+.radio__box::before{
+    content: '';
+    display: inline-block;
+    width: 0.3em;
+    height: 0.3em;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+}
+.checkbox__input:checked + .check__box {
     background-color: #f76beb;
+     box-shadow: 0 0 0 0.1em #f76beb,
+    0 0 0 0.2em #a50598;
     background-image: url(../assets/img/check.svg);
 }
-.checkbox__input:hover + .check__box {
+.radio__input:checked + .radio__box::before{
+     background-color: #a50598;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.checkbox__input:hover +.check__box,
+.radio__input:hover + .radio__box,
+.radio__input:checked + .radio__box {
     box-shadow: 0 0 0 0.1em #f76beb,
     0 0 0 0.2em #a50598;
+    cursor: pointer;
 }
+
+        
